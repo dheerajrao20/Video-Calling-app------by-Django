@@ -1,1 +1,28 @@
-<h2>here is your index </h2>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+</head>
+<body>
+    <section class="box">
+        <img src="{% static 'images/chat-icon.png' %}" alt="chat icon">
+        <h1>Welcome to MyChat</h1>
+        <h3>A group video calling app made just for you!</h3>
+        <div class="inner-box">
+            <h2>Room:</h2>
+            <input type="text" placeholder="ENTER A ROOM NAME...">
+        </div>
+        <div class="inner-box">
+            <h2>Name:</h2>
+            <input type="text" placeholder="ENTER YOUR NAME...">
+        </div>
+        <input class="btn" type="submit">
+    </section>
+
+</body>
+</html>
